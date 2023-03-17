@@ -9,25 +9,16 @@
 </head>
 
 <body>
-  <div id="react-app">
-
-  </div>
-  <div id="vanilla">
+  <div id="app">
 
   </div>
   <script src="https://unpkg.com/react@18.2.0/umd/react.development.js" crossorigin></script>
   <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.development.js" crossorigin></script>
   <script>
-    const reactHeading = React.createElement('h1', null, 'Hello from React')
-    const container = document.getElementById('react-app')
+    const helloWorldHeading = React.createElement('h1', null, 'Hello from React')
+    const container = document.getElementById('app')
     const root = ReactDOM.createRoot(container)
-    root.render(reactHeading)
-  </script>
-  <script>
-    const vanillaHeading = document.createElement('h1')
-    vanillaHeading.textContent = "Hello from Vanilla JS"
-    console.log(vanillaHeading)
-    document.getElementById('vanilla').appendChild(vanillaHeading)
+    root.render(helloWorldHeading)
   </script>
 </body>
 
