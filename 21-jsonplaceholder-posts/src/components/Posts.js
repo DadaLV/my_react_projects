@@ -9,7 +9,9 @@ function Posts() {
       .then((posts) => {
         console.log(posts);
         setPosts(posts);
-      });
+      })
+      .catch((error) => console.log(error.message))
+    
   }, []);
 
   return (
