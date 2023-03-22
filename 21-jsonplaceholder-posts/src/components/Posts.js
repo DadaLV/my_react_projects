@@ -10,14 +10,12 @@ function Posts() {
         console.log(posts);
         setPosts(posts);
       })
-      .catch((error) => console.log(error.message))
-    
+      .catch((error) => console.log(error.message));
   }, []);
 
   return (
     <div>
-      <Post />
-      <Post />
+      
     </div>
   );
 }
