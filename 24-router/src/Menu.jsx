@@ -29,7 +29,7 @@ function Menu() {
         className={({ isActive }) => (isActive ? "activeLink" : "link")}
         to="/courses"
       >
-        Corses
+        Courses
       </NavLink>
     </nav>
   );
