@@ -25,6 +25,12 @@ function Menu() {
       >
         Contacts
       </NavLink>
+      <NavLink
+        className={({ isActive }) => (isActive ? "activeLink" : "link")}
+        to="/courses"
+      >
+        Corses
+      </NavLink>
     </nav>
   );
 }
