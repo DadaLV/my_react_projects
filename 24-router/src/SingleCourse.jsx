@@ -9,7 +9,7 @@ function SingleCourse() {
       <h1>{course.title}</h1>
       <h2>{course.slug}</h2>
       <h3>{course.id}</h3>
-      <Link to="/courses">All courses</Link>
+      <Link to=".." relative="path">All courses</Link>
     </>
   );
 }
