@@ -1,11 +1,11 @@
 import { Link, useNavigate, useParams } from "react-router-dom";
 import courses from "../src/data/courses";
-import NotFound from "./NotFound";
+// import NotFound from "./NotFound";
 import { useEffect } from "react";
 
 function SingleCourse() {
   const params = useParams();
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const course = courses.find((course) => course.slug === params.slug);
   // Simply shoe NotFound component
   // if (course === undefined) {
@@ -19,12 +19,11 @@ function SingleCourse() {
   //   );
   // }
 
-  
   useEffect(() => {
-if (!course) {
-    navigate("..", {relative: "path"})
-  }
-  }, [course])
+    if (!course) {
+      navigate("..", { relative: "path" });
+    }
+  }, [course, navigate]);
 
   return (
     <>
