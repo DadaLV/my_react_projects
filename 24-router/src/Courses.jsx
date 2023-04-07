@@ -24,6 +24,7 @@ function Courses() {
     if (!SORT_KEYS.includes(sortKey)) {
       navigate(".")
       setSortKey()
+      setSortedCourses([...courses])
     }
   }, [sortKey, navigate])
   return (
