@@ -8,14 +8,54 @@
   <title>My project</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <style>
+      .rounded-img {
+        width: 60%;
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba(26, 9, 9, 0.4);
+        padding: 0.6em;
+        margin-bottom: 1em;
+      }
+    </style>
 </head>
 
 <body>
-  <img src="D30_Img_3771(400x400_Crop).jpg" alt="moon" />
-  <h1>Hello</h1>
-  <p>This is moon</p>
-  <button>Like!</button>
-  <h2>world</h2>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+      <a class="navbar-brand p-0" href="/html_course/"><img src="Cosmo.png" alt="logo" width="70"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/html_course/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/html_course/stars.html">Favourite stars</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container text-center my-5">
+    <div class="row">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <img class="rounded-img" src="D30_Img_3771(400x400_Crop).jpg" alt="moon" />
+        <h1 class="fw-light">Moon</h1>
+        <p class="lead text-muted">The Moon is Earth's only natural satellite. It is the fifth largest satellite in the
+          Solar System and the largest and most massive relative to its parent planet,[f] with a diameter about
+          one-quarter that of Earth (comparable to the width of Australia).</p>
+        <a href="https://github.com/DadaLV" target="_blank" class="btn btn-primary">
+          Like!
+        </a>
+      </div>
+    </div>
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
